@@ -11,7 +11,7 @@ public class XorWarmupChallenge {
     }
 
     public ByteBuffer encrypt(final ByteBuffer plantextBuffer) {
-        return new ByteBuffer();
+        return plantextBuffer.xor(keyBuffer);
     }
 
 }
